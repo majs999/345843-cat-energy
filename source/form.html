@@ -24,61 +24,63 @@
     </header>
 
     <main class="page-main">
-      <section class="form">
-        <div class="form__wrapper">
-          <h1 class="form__title"></h1>
-          <p class="form__text"></p>
-          <form class="form__form pick-programm" action="https://echo.htmlacademy.ru" method="get">
-            <fieldset class="pick-programm__main-info main-info">
-              <ul class="main-info__list">
-                <li class="main-info__item">
+      <section class="pick-programm">
+        <div class="pick-programm__wrapper">
+          <h1 class="pick-programm__title">Подбор программы</h1>
+          <p class="pick-programm__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+          <form class="pick-programm__form main-form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="main-form__cat-info cat-info">
+              <legend class="visually-hidden">Основная информация</legend>
+              <ul class="cat-info__list">
+                <li class="cat-info__item">
                   <label for="name">Имя:<sup>*</sup></label>
-                  <input type="text" id="name" name="name" placeholder="Барсик">
+                  <input class="cat-info__input" type="text" id="name" name="name" placeholder="Барсик">
                 </li>
-                <li class="main-info__item">
+                <li class="cat-info__item">
                   <label for="weight">Вес (кг):<sup>*</sup></label>
-                  <input type="text" id="weight" name="weight" placeholder="7">
+                  <input class="cat-info__input" type="text" id="weight" name="weight" placeholder="7">
                 </li>
-                <li class="main-info__item">
+                <li class="cat-info__item">
                   <label for="age">Возраст (лет):<sup>*</sup></label>
-                  <input type="text" id="age" name="age" placeholder="7">
+                  <input class="cat-info__input" type="text" id="age" name="age" placeholder="7">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="pick-programm__goal goal">
-              <ul class="goal__list">
-                <li class="goal__item">
+            <fieldset class="main-form__cat-goal cat-goal">
+              <legend class="visually-hidden">Цель питания</legend>
+              <ul class="cat-goal__list">
+                <li class="cat-goal__item">
                   <input type="radio" name="goal" value="weight-loss" id="weight-loss">
                   <label for="weight-loss">Похудение</label>
                 </li>
-                <li class="goal__item">
+                <li class="cat-goal__item">
                   <input type="radio" name="goal" value="weight-gain" id="weight-gain">
                   <label for="weight-gain">Набор массы</label>
                 </li>
-                <li class="goal__item">
+                <li class="cat-goal__item">
                   <input type="radio" name="goal" value="advice" id="advice">
                   <label for="advice">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="pick-programm__owner owner">
+            <fieldset class="main-form__cat-owner cat-owner">
               <legend>Контактные данные (владельца кота)</legend>
-              <ul class="owner__list">
-                <li class="owner__item">
+              <ul class="cat-owner__list">
+                <li class="cat-owner__item">
                   <label for="email">E-mail:<sup>*</sup></label>
                   <input type="text" id="email" name="email">
                 </li>
-                <li class="owner__item">
+                <li class="cat-owner__item">
                   <label for="tel">Телефон:<sup>*</sup></label>
                   <input type="text" id="tel" name="tel">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="pick-programm__comment comment">
+            <fieldset class="main-form__comment comment">
               <legend>Комментарий</legend>
               <textarea name="name" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
-            <fieldset class="pick-programm__extras extras">
+            <fieldset class="main-form__extras extras">
               <legend>Дополнительно</legend>
               <ul class="extras__list">
                 <li class="extras__items">
@@ -99,8 +101,8 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="pick-programm__button button" type="submit">Отправить заявку</button>
-            <small class="pick-programm__legend"><sup>*</sup> — Обязательные поля</small>
+            <button class="main-form__button button" type="submit">Отправить заявку</button>
+            <small class="main-form__legend"><sup>*</sup> — Обязательные поля</small>
           </form>
         </div>
       </section>
