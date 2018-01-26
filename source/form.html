@@ -34,15 +34,15 @@
               <ul class="cat-info__list">
                 <li class="cat-info__item">
                   <label for="name">Имя:<sup>*</sup></label>
-                  <input class="cat-info__input" type="text" id="name" name="name" placeholder="Барсик">
+                  <input class="main-form__input" type="text" id="name" name="name" placeholder="Барсик">
                 </li>
                 <li class="cat-info__item">
                   <label for="weight">Вес (кг):<sup>*</sup></label>
-                  <input class="cat-info__input" type="text" id="weight" name="weight" placeholder="7">
+                  <input class="main-form__input" type="text" id="weight" name="weight" placeholder="7">
                 </li>
                 <li class="cat-info__item">
                   <label for="age">Возраст (лет):<sup>*</sup></label>
-                  <input class="cat-info__input" type="text" id="age" name="age" placeholder="7">
+                  <input class="main-form__input" type="text" id="age" name="age" placeholder="7">
                 </li>
               </ul>
             </fieldset>
@@ -50,15 +50,15 @@
               <legend class="visually-hidden">Цель питания</legend>
               <ul class="cat-goal__list">
                 <li class="cat-goal__item">
-                  <input type="radio" name="goal" value="weight-loss" id="weight-loss">
+                  <input class="cat-goal__radio" type="radio" name="goal" value="weight-loss" id="weight-loss">
                   <label for="weight-loss">Похудение</label>
                 </li>
                 <li class="cat-goal__item">
-                  <input type="radio" name="goal" value="weight-gain" id="weight-gain">
+                  <input class="cat-goal__radio" type="radio" name="goal" value="weight-gain" id="weight-gain">
                   <label for="weight-gain">Набор массы</label>
                 </li>
                 <li class="cat-goal__item">
-                  <input type="radio" name="goal" value="advice" id="advice">
+                  <input class="cat-goal__radio" type="radio" name="goal" value="advice" id="advice">
                   <label for="advice">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
@@ -68,15 +68,15 @@
               <ul class="cat-owner__list">
                 <li class="cat-owner__item">
                   <label for="email">E-mail:<sup>*</sup></label>
-                  <input type="text" id="email" name="email">
+                  <input class="main-form__input" type="text" id="email" name="email">
                 </li>
                 <li class="cat-owner__item">
                   <label for="tel">Телефон:<sup>*</sup></label>
-                  <input type="text" id="tel" name="tel">
+                  <input class="main-form__input" type="text" id="tel" name="tel">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="main-form__comment comment">
+            <fieldset class="main-form__comment">
               <legend>Комментарий</legend>
               <textarea name="name" rows="8" cols="80" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
@@ -84,19 +84,19 @@
               <legend>Дополнительно</legend>
               <ul class="extras__list">
                 <li class="extras__items">
-                  <input type="checkbox" id="sugar" name="sugar" checked>
+                  <input class="main-form__checkbox" type="checkbox" id="sugar" name="sugar" checked>
                   <label for="sugar">Сахарозаменитель</label>
                 </li>
                 <li class="extras__items">
-                  <input type="checkbox" id="water" name="water">
+                  <input class="main-form__checkbox" type="checkbox" id="water" name="water">
                   <label for="water">Питьевая вода</label>
                 </li>
                 <li class="extras__items">
-                  <input type="checkbox" id="milk" name="milk">
+                  <input class="main-form__checkbox" type="checkbox" id="milk" name="milk">
                   <label for="milk">Молоко</label>
                 </li>
                 <li class="extras__items">
-                  <input type="checkbox" id="vitamins" name="vitamins">
+                  <input class="main-form__checkbox" type="checkbox" id="vitamins" name="vitamins">
                   <label for="vitamins">Витамины</label>
                 </li>
               </ul>
