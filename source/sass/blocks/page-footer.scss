@@ -1,0 +1,8 @@
+.page-footer {
+  @include temp;
+  background-color: $main-color-3;
+}
+
+.page-footer__wrapper {
+  @include block;
+}

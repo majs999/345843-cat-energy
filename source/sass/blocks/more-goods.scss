@@ -1,0 +1,24 @@
+.more-goods {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.more-goods__wrapper {
+  @include block;
+}
+
+.more-goods__show {
+  @include text;
+}
+
+.more-goods__text {
+  @include text-arial;
+}
+
+.more-goods__button {
+  @include button;
+  color: $main-color-4;
+  background-color: $main-color-3;
+}

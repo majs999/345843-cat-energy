@@ -1,0 +1,28 @@
+fieldset {
+  border: none;
+}
+
+label,
+input,
+textarea {
+  @include text;
+}
+
+legend {
+  @include small-title;
+}
+
+.cat-info__list,
+.cat-goal__list,
+.cat-owner__list,
+.extras__list {
+  @include list-unstyled;
+}
+
+.main-form__button {
+  @include button;
+}
+
+.main-form__legend {
+  @include text-arial;
+}

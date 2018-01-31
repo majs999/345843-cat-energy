@@ -1,0 +1,18 @@
+.contacts {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.contacts__wrapper {
+  @include block;
+}
+
+.contacts__slogan {
+  @include text;
+}
+
+.contacts__text {
+  @include text-arial;
+}

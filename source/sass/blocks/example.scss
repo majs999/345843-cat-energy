@@ -1,0 +1,38 @@
+.exapmle {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-3;
+}
+
+.exapmle__wrapper {
+  @include block;
+}
+
+.example__title {
+  @include title;
+}
+
+.example__text {
+  @include text-arial;
+}
+
+.exapmle__statistics {
+  @include list-unstyled;
+}
+
+.example__result {
+  @include small-title;
+  text-transform: uppercase;
+}
+
+.example__desc {
+  @include text-arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.exapmle__cost {
+  @include text;
+  font-size: 14px;
+}

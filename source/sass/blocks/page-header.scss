@@ -1,0 +1,5 @@
+.page-header {
+  @include temp;
+  @include block;
+  background-color: $main-color-1;
+}

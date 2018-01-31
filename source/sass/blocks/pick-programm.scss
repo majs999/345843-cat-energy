@@ -1,0 +1,20 @@
+.pick-programm {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.pick-programm__wrapper {
+  @include block;
+}
+
+.pick-programm__title {
+  @include title;
+}
+
+.pick-programm__text {
+  @include text;
+  font-size: 14px;
+  line-height: 18px;
+}

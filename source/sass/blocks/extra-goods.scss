@@ -1,0 +1,18 @@
+.extra-goods {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.extra-goods__wrapper {
+  @include block;
+}
+
+.extra-goods__title {
+  @include small-title;
+}
+
+.extra-goods__list {
+  @include list-unstyled;
+}

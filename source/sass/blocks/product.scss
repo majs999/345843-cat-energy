@@ -1,0 +1,15 @@
+.product__title {
+  @include text;
+}
+
+.product__link {
+  @include unlink;
+}
+
+.product__statistics {
+  @include text-arial;
+}
+
+.product__button {
+  @include button;
+}

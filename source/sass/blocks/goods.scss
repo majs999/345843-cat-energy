@@ -1,0 +1,15 @@
+.goods__link {
+  @include unlink;
+}
+
+.goods__title {
+  @include text;
+}
+
+.goods__table {
+  @include text-arial;
+}
+
+.goods__button {
+  @include button;
+}

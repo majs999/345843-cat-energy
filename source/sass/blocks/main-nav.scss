@@ -1,0 +1,6 @@
+.main-nav {
+  @include text;
+  font-size: 20px;
+  font-family: $font-medium;
+  color: $main-color-4;
+}

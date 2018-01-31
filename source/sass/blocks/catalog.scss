@@ -1,0 +1,14 @@
+.catalog {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.catalog__wrapper {
+  @include block;
+}
+
+.catalog__title {
+  @include title;
+}

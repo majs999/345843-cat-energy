@@ -1,0 +1,22 @@
+.about {
+  @include temp;
+  color: $main-color-4;
+  font-family: $font-regular;
+  background-color: $main-color-1;
+}
+
+.about__wrapper {
+  @include block;
+}
+
+.about__title {
+  @include title;
+}
+
+.about__list {
+  @include list-unstyled;
+}
+
+.about__item {
+  @include text-arial;
+}
