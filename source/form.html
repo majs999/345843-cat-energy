@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
-        <img class="page-header__logo-image" src="http://placehold.it/33x38" width="33" height="38" alt="Cat Energy">
-        <img class="page-header__logo-text logo-header" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+        <img class="page-header__logo-image" src="../img/icon-logo-mobile.svg" width="33" height="38" alt="Cat Energy">
+        <img class="page-header__logo-text logo-header" src="../img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item site-list__item--active"><a>Подбор программы</a></li>
+            <li class="site-list__item"><a href="index.html" class="site-list__link">Главная</a></li>
+            <li class="site-list__item"><a href="catalog.html" class="site-list__link">Каталог продукции</a></li>
+            <li class="site-list__item site-list__item--active"><a class="site-list__link">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -68,11 +69,11 @@
               <ul class="cat-owner__list">
                 <li class="cat-owner__item">
                   <label for="email">E-mail:<sup>*</sup></label>
-                  <input class="main-form__input" type="text" id="email" name="email">
+                  <input class="main-form__input" type="text" id="email" name="email" placeholder="kuklachev@gmail.com">
                 </li>
                 <li class="cat-owner__item">
                   <label for="tel">Телефон:<sup>*</sup></label>
-                  <input class="main-form__input" type="text" id="tel" name="tel">
+                  <input class="main-form__input" type="text" id="tel" name="tel" placeholder="8 (960) 900-60-90">
                 </li>
               </ul>
             </fieldset>
@@ -106,20 +107,21 @@
           </form>
         </div>
       </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="visually-hidden">Как нас найти</h2>
+          <strong class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</strong>
+          <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+        <div class="contacts__map"></div>
+      </section>
     </main>
 
     <footer class="page-footer page-footer--inner">
       <div class="page-footer__wrapper">
-        <section class="contacts">
-          <div class="contacts__wrapper">
-            <h2 class="visually-hidden">Как нас найти</h2>
-            <strong class="contacts__slogan">Приглашаем к сотрудничеству дилеров!</strong>
-            <p class="contacts__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-            <div class="contacts__map"></div>
-          </div>
-        </section>
         <a href="index.html" class="page-footer__logo">
-          <img class="page-footer__logo-text logo-footer" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          <img class="page-footer__logo-text logo-footer" src="../img/logo-footer.svg" width="101" height="18" alt="Cat Energy">
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -130,8 +132,8 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a href="https://htmlacademy.ru/" class="copyright__link">
-            <b class="copyright__text">HTML Academy</b>
-            <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML Academy" class="copyright__logo">
+            <span class="copyright__text">HTML Academy</span>
+            <img src="../img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy" class="copyright__logo">
           </a>
         </div>
       </div>
