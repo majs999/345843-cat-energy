@@ -1,18 +1,19 @@
 .contacts {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .contacts__wrapper {
-  @include block;
+  @include container;
 }
 
 .contacts__slogan {
-  @include text;
+  text-transform: uppercase;
 }
 
 .contacts__text {
   @include text-arial;
+}
+
+iframe {
+  border: 0;
 }

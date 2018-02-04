@@ -1,5 +1,7 @@
 .page-header {
-  @include temp;
-  @include block;
-  background-color: $main-color-1;
+  @include block-border;
+}
+
+.page-header__wrapper {
+  @include container;
 }

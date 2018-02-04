@@ -41,9 +41,11 @@ html {
 }
 
 body {
-  margin: 0 auto;
-  min-width: 1200px;
-  // @include body-text;
+  font-family: $font-regular;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-color-black;
+  background-color: $main-color-white;
 }
 
 img {

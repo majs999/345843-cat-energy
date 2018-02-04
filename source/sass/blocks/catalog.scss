@@ -1,12 +1,9 @@
 .catalog {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .catalog__wrapper {
-  @include block;
+  @include container;
 }
 
 .catalog__title {

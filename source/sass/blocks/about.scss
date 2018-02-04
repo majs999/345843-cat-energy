@@ -1,12 +1,9 @@
 .about {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .about__wrapper {
-  @include block;
+  @include container;
 }
 
 .about__title {

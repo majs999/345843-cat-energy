@@ -1,12 +1,11 @@
 .promo {
-  @include temp;
-  color: $main-color-1;
-  font-family: $font-regular;
-  background: $main-color-2 url("../img/index-background-mobile@1x.jpg");
+  @include block-border;
+  color: $main-color-white;
+  background: $main-color-green url("../img/index-background-mobile@1x.jpg");
 }
 
 .promo__wrapper {
-  @include block;
+  @include container;
 }
 
 .promo__title {
@@ -21,8 +20,4 @@
 
 .promo__image {
   display: block;
-}
-
-.promo__button {
-  @include button;
 }

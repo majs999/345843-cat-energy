@@ -1,5 +1,5 @@
 .product__title {
-  @include text;
+  text-transform: uppercase;
 }
 
 .product__link {
@@ -8,8 +8,4 @@
 
 .product__statistics {
   @include text-arial;
-}
-
-.product__button {
-  @include button;
 }

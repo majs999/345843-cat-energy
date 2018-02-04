@@ -5,11 +5,16 @@ fieldset {
 label,
 input,
 textarea {
-  @include text;
+  text-transform: uppercase;
 }
 
 legend {
   @include small-title;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
 }
 
 .cat-info__list,
@@ -17,10 +22,6 @@ legend {
 .cat-owner__list,
 .extras__list {
   @include list-unstyled;
-}
-
-.main-form__button {
-  @include button;
 }
 
 .main-form__legend {

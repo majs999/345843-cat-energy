@@ -1,12 +1,9 @@
 .exapmle {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-3;
+  @include block-border;
 }
 
 .exapmle__wrapper {
-  @include block;
+  @include container;
 }
 
 .example__title {
@@ -33,6 +30,6 @@
 }
 
 .exapmle__cost {
-  @include text;
   font-size: 14px;
+  text-transform: uppercase;
 }

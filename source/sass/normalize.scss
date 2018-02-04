@@ -71,11 +71,11 @@ audio:not([controls]) {
 
 /**
  * Address `[hidden]` styling not present in IE 8/9/10.
- * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ * Hide the `block-borderlate` element in IE 8/9/11, Safari, and Firefox < 22.
  */
 
 [hidden],
-template {
+block-borderlate {
   display: none;
 }
 
@@ -324,7 +324,7 @@ input {
 }
 
 /**
- * It's recommended that you don't attempt to style these elements.
+ * It's recommended that you don't atblock-bordert to style these elements.
  * Firefox's implementation doesn't respect box-sizing, padding, or width.
  *
  * 1. Address box sizing set to `content-box` in IE 8/9/10.

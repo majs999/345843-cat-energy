@@ -1,16 +1,16 @@
-@mixin temp () {
+@mixin container () {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin block-border () {
   margin: 30px 0;
-  border: 1px solid $main-color-2;
+  border: 1px solid $main-color-green;
 }
 
 @mixin block {
   padding: 0 20px;
-}
-
-@mixin text () {
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
 }
 
 @mixin text-arial () {
@@ -31,28 +31,12 @@
 }
 
 @mixin unlink () {
-  color: $main-color-4;
+  color: $main-color-black;
   text-decoration: none;
-}
-
-@mixin before () {
-  content: "";
-  position: absolute;
 }
 
 @mixin list-unstyled () {
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-@mixin button () {
-  display: block;
-  padding: 8px 0;
-  width: 280px;
-  color: $main-color-1;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  background-color: $main-color-2;
 }

@@ -1,8 +1,8 @@
 .page-footer {
-  @include temp;
-  background-color: $main-color-3;
+  @include block-border;
+  background-color: $main-color-grey;
 }
 
 .page-footer__wrapper {
-  @include block;
+  @include container;
 }

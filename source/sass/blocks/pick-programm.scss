@@ -1,12 +1,9 @@
 .pick-programm {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .pick-programm__wrapper {
-  @include block;
+  @include container;
 }
 
 .pick-programm__title {
@@ -14,7 +11,7 @@
 }
 
 .pick-programm__text {
-  @include text;
   font-size: 14px;
   line-height: 18px;
+  text-transform: uppercase;
 }

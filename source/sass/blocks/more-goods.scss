@@ -1,16 +1,13 @@
 .more-goods {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .more-goods__wrapper {
-  @include block;
+  @include container;
 }
 
 .more-goods__show {
-  @include text;
+  text-transform: uppercase;
 }
 
 .more-goods__text {
@@ -18,7 +15,6 @@
 }
 
 .more-goods__button {
-  @include button;
-  color: $main-color-4;
-  background-color: $main-color-3;
+  color: $main-color-black;
+  background-color: $main-color-grey;
 }

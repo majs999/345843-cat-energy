@@ -1,10 +1,7 @@
 .programms {
-  @include temp;
-  color: $main-color-4;
-  font-family: $font-regular;
-  background-color: $main-color-1;
+  @include block-border;
 }
 
 .programms__wrapper {
-  @include block;
+  @include container;
 }

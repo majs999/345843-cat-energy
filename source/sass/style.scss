@@ -1,8 +1,9 @@
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
-@import "page.scss";
+@import "scaffolding.scss";
 @import "blocks/about.scss";
+@import "blocks/button.scss";
 @import "blocks/catalog.scss";
 @import "blocks/contacts.scss";
 @import "blocks/copyright.scss";
@@ -15,7 +16,6 @@
 @import "blocks/more-goods.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
-@import "blocks/page-main.scss";
 @import "blocks/pick-programm.scss";
 @import "blocks/product.scss";
 @import "blocks/programm.scss";

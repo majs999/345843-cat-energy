@@ -3,13 +3,9 @@
 }
 
 .goods__title {
-  @include text;
+  text-transform: uppercase;
 }
 
 .goods__table {
   @include text-arial;
-}
-
-.goods__button {
-  @include button;
 }
