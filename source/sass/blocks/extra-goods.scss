@@ -1,0 +1,15 @@
+.extra-goods {
+  @include block-border;
+}
+
+.extra-goods__wrapper {
+  @include container;
+}
+
+.extra-goods__title {
+  @include small-title;
+}
+
+.extra-goods__list {
+  @include list-unstyled;
+}

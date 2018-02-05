@@ -1,0 +1,29 @@
+fieldset {
+  border: none;
+}
+
+label,
+input,
+textarea {
+  text-transform: uppercase;
+}
+
+legend {
+  @include small-title;
+}
+
+textarea {
+  resize: vertical;
+  width: 100%;
+}
+
+.cat-info__list,
+.cat-goal__list,
+.cat-owner__list,
+.extras__list {
+  @include list-unstyled;
+}
+
+.main-form__legend {
+  @include text-arial;
+}

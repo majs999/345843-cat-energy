@@ -1,0 +1,19 @@
+.contacts {
+  @include block-border;
+}
+
+.contacts__wrapper {
+  @include container;
+}
+
+.contacts__slogan {
+  text-transform: uppercase;
+}
+
+.contacts__text {
+  @include text-arial;
+}
+
+iframe {
+  border: 0;
+}

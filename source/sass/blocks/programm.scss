@@ -1,0 +1,17 @@
+.programm {
+  background-color: $main-color-grey;
+}
+
+.programm__title {
+  @include small-title;
+  text-transform: uppercase;
+}
+
+.programm__text {
+  @include text-arial;
+}
+
+.programm__link {
+  @include unlink;
+  text-transform: uppercase;
+}

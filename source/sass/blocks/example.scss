@@ -1,0 +1,35 @@
+.exapmle {
+  @include block-border;
+}
+
+.exapmle__wrapper {
+  @include container;
+}
+
+.example__title {
+  @include title;
+}
+
+.example__text {
+  @include text-arial;
+}
+
+.exapmle__statistics {
+  @include list-unstyled;
+}
+
+.example__result {
+  @include small-title;
+  text-transform: uppercase;
+}
+
+.example__desc {
+  @include text-arial;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.exapmle__cost {
+  font-size: 14px;
+  text-transform: uppercase;
+}

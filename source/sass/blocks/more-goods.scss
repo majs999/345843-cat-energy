@@ -1,0 +1,20 @@
+.more-goods {
+  @include block-border;
+}
+
+.more-goods__wrapper {
+  @include container;
+}
+
+.more-goods__show {
+  text-transform: uppercase;
+}
+
+.more-goods__text {
+  @include text-arial;
+}
+
+.more-goods__button {
+  color: $main-color-black;
+  background-color: $main-color-grey;
+}

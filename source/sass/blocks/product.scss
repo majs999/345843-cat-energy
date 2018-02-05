@@ -1,0 +1,11 @@
+.product__title {
+  text-transform: uppercase;
+}
+
+.product__link {
+  @include unlink;
+}
+
+.product__statistics {
+  @include text-arial;
+}

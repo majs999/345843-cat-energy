@@ -1,0 +1,23 @@
+.promo {
+  @include block-border;
+  color: $main-color-white;
+  background: $main-color-green url("../img/index-background-mobile@1x.jpg");
+}
+
+.promo__wrapper {
+  @include container;
+}
+
+.promo__title {
+  @include title;
+}
+
+.promo__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.promo__image {
+  display: block;
+}

@@ -1,0 +1,11 @@
+.catalog {
+  @include block-border;
+}
+
+.catalog__wrapper {
+  @include container;
+}
+
+.catalog__title {
+  @include title;
+}

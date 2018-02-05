@@ -1,0 +1,11 @@
+.goods__link {
+  @include unlink;
+}
+
+.goods__title {
+  text-transform: uppercase;
+}
+
+.goods__table {
+  @include text-arial;
+}

@@ -1,0 +1,8 @@
+.page-footer {
+  @include block-border;
+  background-color: $main-color-grey;
+}
+
+.page-footer__wrapper {
+  @include container;
+}

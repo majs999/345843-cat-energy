@@ -1,0 +1,4 @@
+.social__list {
+  @include list-unstyled;
+  display: flex;
+}

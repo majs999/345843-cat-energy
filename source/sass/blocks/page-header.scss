@@ -1,0 +1,7 @@
+.page-header {
+  @include block-border;
+}
+
+.page-header__wrapper {
+  @include container;
+}

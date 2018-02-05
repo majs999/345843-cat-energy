@@ -1,0 +1,42 @@
+@mixin container () {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@mixin block-border () {
+  margin: 30px 0;
+  border: 1px solid $main-color-green;
+}
+
+@mixin block {
+  padding: 0 20px;
+}
+
+@mixin text-arial () {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+@mixin title () {
+  margin: 0;
+  font-size: 36px;
+  line-height: 60px;
+}
+
+@mixin small-title () {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+@mixin unlink () {
+  color: $main-color-black;
+  text-decoration: none;
+}
+
+@mixin list-unstyled () {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

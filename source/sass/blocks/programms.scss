@@ -1,0 +1,7 @@
+.programms {
+  @include block-border;
+}
+
+.programms__wrapper {
+  @include container;
+}

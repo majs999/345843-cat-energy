@@ -1,0 +1,19 @@
+.about {
+  @include block-border;
+}
+
+.about__wrapper {
+  @include container;
+}
+
+.about__title {
+  @include title;
+}
+
+.about__list {
+  @include list-unstyled;
+}
+
+.about__item {
+  @include text-arial;
+}

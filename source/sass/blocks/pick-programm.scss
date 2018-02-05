@@ -1,0 +1,17 @@
+.pick-programm {
+  @include block-border;
+}
+
+.pick-programm__wrapper {
+  @include container;
+}
+
+.pick-programm__title {
+  @include title;
+}
+
+.pick-programm__text {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}

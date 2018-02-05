@@ -1,0 +1,17 @@
+.gift {
+  @include block-border;
+  @include container;
+  font-family: "Arial", sans-serif;
+}
+
+.gift__wrapper {
+  height: 289px;
+  color: $main-color-white;
+  background: $main-color-green url("../img/gift-photo-mobile@1x.jpg");
+}
+
+.gift__slogan {
+  @include text-arial;
+  font-size: 16px;
+  line-height: 20px;
+}
