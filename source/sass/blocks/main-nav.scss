@@ -3,3 +3,13 @@
   font-family: $font-medium;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    font-family: $font-regular;
+  }
+
+  .main-nav__toggle {
+    display: none;
+  }
+}

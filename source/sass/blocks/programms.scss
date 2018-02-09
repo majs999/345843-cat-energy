@@ -1,7 +1,13 @@
-.programms {
-  @include block-border;
-}
-
 .programms__wrapper {
   @include container;
+}
+
+@media (min-width: $desktop-width) {
+  .programms {
+    margin-bottom: 80px;
+  }
+
+  .programms__wrapper {
+    display: flex;
+  }
 }

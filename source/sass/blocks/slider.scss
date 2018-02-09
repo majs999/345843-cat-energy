@@ -1,0 +1,44 @@
+@media (min-width: $tablet-width) {
+  .slider {
+    padding-bottom: 75px;
+    background-color: #eaeaea;
+  }
+
+  .slider__image {
+    width: 690px;
+    height: 517px;
+  }
+
+  .slider__toggles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slider__toggle {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  .slider__scale {
+    width: 428px;
+    height: 6px;
+    background-color: #dcdcdc;
+    border-radius: 3px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider {
+    width: 690px;
+    position: absolute;
+    right: 0;
+    top: -180px;
+    background-color: transparent;
+  }
+
+  .slider__image:last-of-type {
+    display: none;
+  }
+}

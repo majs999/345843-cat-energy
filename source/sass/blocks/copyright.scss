@@ -1,4 +1,5 @@
 .copyright__link {
+  color: $main-color-darkgrey;
   text-decoration: none;
 }
 
@@ -6,4 +7,15 @@
   @include text-arial;
   font-size: 16px;
   line-height: 16px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright__logo {
+    margin-left: 25px;
+  }
 }

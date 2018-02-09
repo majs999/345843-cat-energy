@@ -9,3 +9,65 @@
 .goods__table {
   @include text-arial;
 }
+
+@media (min-width: $tablet-width) {
+  .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border: 1px solid $main-color-grey;
+  }
+
+  .goods__link {
+    flex-basis: 50%;
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+
+  .goods__table {
+    flex-basis: 50%;
+  }
+
+  .goods__quantity {
+    padding-right: 50px;
+  }
+
+  .goods__button {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods {
+    position: relative;
+    padding: 25px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+  }
+
+  .goods__link,
+  .goods__button {
+    flex-basis: auto;
+  }
+
+  .goods__link {
+    margin: 0;
+  }
+
+  .goods__button {
+    width: 245px;
+  }
+
+  .goods__table {
+    position: absolute;
+    left: 325px;
+    width: 285px;
+  }
+
+  .goods__price {
+    text-align: right;
+  }
+}

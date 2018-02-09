@@ -15,3 +15,51 @@
   @include unlink;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .programm {
+    padding-top: 80px;
+    padding-left: 55px;
+    padding-bottom: 65px;
+    margin-bottom: 35px;
+  }
+
+  .programm__title {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 35px;
+  }
+
+  .programm__text {
+    margin-right: 280px;
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programm__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm {
+    flex-basis: 50%;
+    margin-bottom: 0;
+  }
+
+  .programm:first-of-type {
+    margin-right: 80px;
+  }
+
+  .programm__title {
+    margin-left: 165px;
+    margin-bottom: 80px;
+  }
+
+  .programm__text {
+    margin-right: 50px;
+    margin-bottom: 40px;
+  }
+}

@@ -1,5 +1,4 @@
 .promo {
-  @include block-border;
   color: $main-color-white;
   background: $main-color-green url("../img/index-background-mobile@1x.jpg");
 }
@@ -20,4 +19,69 @@
 
 .promo__image {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    color: $main-color-black;
+    background: $main-color-white;
+  }
+
+  .promo__wrapper {
+    position: relative;
+  }
+
+  .promo__title {
+    margin-left: 90px;
+    margin-right: 200px;
+    margin-bottom: 35px;
+  }
+
+  .promo__slogan {
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .promo__image {
+    width: 709px;
+    height: 609px;
+  }
+
+  .promo__button {
+    position: absolute;
+    left: 120px;
+    top: 220px;
+    width: auto;
+    padding: 20px 30px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 500px;
+    margin-bottom: 80px;
+  }
+
+  .promo__title,
+  .promo__slogan {
+    margin-left: 85px;
+    margin-right: 700px;
+    margin-bottom: 50px;
+  }
+
+  .promo__button {
+    left: 195px;
+    top: 240px;
+  }
+
+  .promo__image {
+    position: absolute;
+    left: 600px;
+    top: -80px;
+    width: 552px;
+    height: 499px;
+  }
 }

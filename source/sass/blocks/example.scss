@@ -1,7 +1,3 @@
-.exapmle {
-  @include block-border;
-}
-
 .exapmle__wrapper {
   @include container;
 }
@@ -32,4 +28,69 @@
 .exapmle__cost {
   font-size: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example__title {
+    margin-bottom: 75px;
+  }
+
+  .example__text {
+    margin-right: 20px;
+    margin-bottom: 60px;
+  }
+
+  .exapmle__statistics {
+    display: flex;
+    margin-bottom: 75px;
+  }
+
+  .exapmle__stat:not(:last-child) {
+    margin-right: 45px;
+  }
+
+  .example__result {
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .example__desc {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .exapmle__wrapper {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    background-color: $main-color-grey;
+  }
+
+  .example__title {
+    position: absolute;
+    margin: 0;
+    top: -140px;
+  }
+
+  .example__text {
+    margin-right: 785px;
+    margin-bottom: 75px;
+  }
+
+  .exapmle__statistics {
+    flex-wrap: wrap;
+    margin-right: 785px;
+    margin-bottom: 0;
+  }
+
+  .example__stat {
+    margin-bottom: 60px;
+  }
+
+  .exapmle__cost {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

@@ -1,8 +1,17 @@
 .page-footer {
-  @include block-border;
   background-color: $main-color-grey;
 }
 
 .page-footer__wrapper {
   @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__wrapper {
+    padding-top: 65px;
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

@@ -1,7 +1,3 @@
-.pick-programm {
-  @include block-border;
-}
-
 .pick-programm__wrapper {
   @include container;
 }
@@ -14,4 +10,25 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .pick-programm__title {
+    margin-bottom: 65px;
+  }
+
+  .pick-programm__text {
+    margin-left: 40px;
+    margin-right: 340px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pick-programm__text {
+    margin-left: 0;
+    margin-right: 895px;
+  }
 }
