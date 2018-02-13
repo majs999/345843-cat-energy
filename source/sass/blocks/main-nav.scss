@@ -1,7 +1,15 @@
 .main-nav {
+  position: relative;
   font-size: 20px;
   font-family: $font-medium;
   text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  font-size: 10px;
+  position: absolute;
+  top: -50px;
+  right: 20px;
 }
 
 @media (min-width: $tablet-width) {

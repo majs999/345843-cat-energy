@@ -1,13 +1,30 @@
+.goods {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid $main-color-medgrey;
+
+  &:last-of-type {
+    border-bottom: 1px solid $main-color-medgrey;
+  }
+}
+
 .goods__link {
   @include unlink;
 }
 
 .goods__title {
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .goods__table {
   @include text-arial;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.goods__price {
+  text-align: right;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,14 +36,14 @@
     border: 1px solid $main-color-grey;
   }
 
-  .goods__link {
-    flex-basis: 50%;
-    margin-bottom: 30px;
+  .goods__title {
+    margin-bottom: 15px;
     font-size: 20px;
   }
 
   .goods__table {
-    flex-basis: 50%;
+    width: auto;
+    margin-bottom: 0;
   }
 
   .goods__quantity {
@@ -40,8 +57,7 @@
 
 @media (min-width: $desktop-width) {
   .goods {
-    position: relative;
-    padding: 25px 0;
+    padding: 20px 0;
     flex-wrap: nowrap;
     align-items: center;
     border-left: none;
@@ -55,6 +71,11 @@
 
   .goods__link {
     margin: 0;
+    flex-basis: 325px;
+  }
+
+  .goods__title {
+    margin-bottom: 0;
   }
 
   .goods__button {
@@ -62,9 +83,8 @@
   }
 
   .goods__table {
-    position: absolute;
-    left: 325px;
     width: 285px;
+    flex-basis: 285px;
   }
 
   .goods__price {

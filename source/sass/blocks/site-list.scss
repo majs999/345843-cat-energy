@@ -6,7 +6,14 @@
   @include unlink;
   display: block;
   padding: 25px 0;
+  text-align: center;
   border-top: 1px solid $main-color-grey;
+}
+
+.site-list__item:last-of-type {
+  .site-list__link {
+    border-bottom: 1px solid $main-color-grey;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -16,6 +23,12 @@
 
   .site-list__item:not(:last-of-type) {
     margin-right: 40px;
+  }
+
+  .site-list__item:last-of-type {
+    .site-list__link {
+      border-bottom: none;
+    }
   }
 
   .site-list__link {

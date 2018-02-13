@@ -1,13 +1,16 @@
 .extra-goods__wrapper {
   @include container;
+  padding-top: 35px;
 }
 
 .extra-goods__title {
   @include small-title;
+  margin-bottom: 35px;
 }
 
 .extra-goods__list {
   @include list-unstyled;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
@@ -19,14 +22,27 @@
     margin-left: 40px;
     margin-bottom: 85px;
   }
+
+  .extra-goods__list {
+    margin-bottom: 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .extra-goods__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .extra-goods__title {
     margin-left: 0;
+    flex-basis: 100%;
   }
 
   .extra-goods__list {
-    margin-right: 325px;
+    flex-basis: 900px;
+    margin-bottom: 0;
   }
 }

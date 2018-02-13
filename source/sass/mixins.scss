@@ -9,8 +9,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 1440px;
-    padding: 0 110px;
+    width: 1300px;
+    padding: 0 40px;
   }
 }
 
@@ -37,10 +37,11 @@
 @mixin title () {
   margin: 0;
   font-size: 36px;
-  line-height: 60px;
+  line-height: 36px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
+    line-height: 60px;
   }
 }
 

@@ -2,6 +2,7 @@ fieldset {
   margin: 0;
   padding: 0;
   border: none;
+  margin-bottom: 25px;
 }
 
 label,
@@ -12,11 +13,14 @@ textarea {
 
 legend {
   @include small-title;
+  margin-bottom: 35px;
 }
 
 textarea {
   resize: vertical;
   width: 100%;
+  padding: 10px;
+  border: 1px solid $main-color-grey;
 }
 
 .cat-info__list,
@@ -28,6 +32,54 @@ textarea {
 
 .main-form__legend {
   @include text-arial;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cat-info__item,
+.cat-owner__item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin-right: 10px;
+  }
+
+  input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid $main-color-grey;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.cat-goal {
+  padding: 30px 0;
+  border-top: 1px solid $main-color-grey;
+  border-bottom: 1px solid $main-color-grey;
+}
+
+.cat-goal__item,
+.extras__items {
+  margin-bottom: 30px;
+  padding-left: 45px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.extras {
+  margin-bottom: 35px;
+}
+
+.main-form__button {
+  margin-bottom: 25px;
 }
 
 @media (min-width: $tablet-width) {
@@ -103,6 +155,10 @@ textarea {
     bottom: 10px;
     left: 345px;
   }
+
+  .extras {
+    margin-bottom: 65px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -111,11 +167,12 @@ textarea {
     margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .cat-info,
   .cat-goal {
-    flex-basis: 50%;
+    flex-basis: 570px;
   }
 
   .cat-owner {
@@ -124,7 +181,13 @@ textarea {
 
   .cat-owner__list {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+  }
+
+  .cat-owner__item {
+    flex-basis: 570px;
+    margin-bottom: 0;
   }
 
   .main-form__comment {
@@ -145,7 +208,8 @@ textarea {
   }
 
   .main-form__button {
-    width: 568px;
+    flex-basis: 570px;
+    margin-bottom: 0;
   }
 
   .main-form__legend {

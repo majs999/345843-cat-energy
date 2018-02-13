@@ -1,12 +1,22 @@
+.catalog {
+  padding-top: 30px;
+}
+
 .catalog__wrapper {
   @include container;
 }
 
 .catalog__title {
   @include title;
+  margin-bottom: 40px;
 }
 
 @media (min-width: $tablet-width) {
+  .catalog {
+    padding-top: 0;
+    margin-bottom: 70px;
+  }
+
   .catalog__wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -14,13 +24,11 @@
   }
 
   .catalog__title {
-    margin-bottom: 75px;
+    margin-bottom: 170px;
     flex-basis: 100%;
   }
 }
 
-@media (min-width: $desktop-width) {
-  .catalog__title {
-    margin-bottom: 170px;
-  }
-}
+// @media (min-width: $desktop-width) {
+//
+// }

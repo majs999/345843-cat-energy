@@ -4,14 +4,27 @@
 
 .page-footer__wrapper {
   @include container;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-footer__logo {
+  margin-bottom: 30px;
 }
 
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     padding-top: 65px;
     padding-bottom: 60px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: row;
+  }
+
+  .page-footer__logo {
+    margin-bottom: 0;
+    flex-basis: 33%;
   }
 }
