@@ -4,10 +4,12 @@
 
 .catalog__wrapper {
   @include container;
+  padding: 0;
 }
 
 .catalog__title {
   @include title;
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 
