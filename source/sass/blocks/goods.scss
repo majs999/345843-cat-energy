@@ -1,11 +1,93 @@
+.goods {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid $main-color-medgrey;
+
+  &:last-of-type {
+    border-bottom: 1px solid $main-color-medgrey;
+  }
+}
+
 .goods__link {
   @include unlink;
 }
 
 .goods__title {
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .goods__table {
   @include text-arial;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.goods__price {
+  text-align: right;
+}
+
+@media (min-width: $tablet-width) {
+  .goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 40px;
+    border: 1px solid $main-color-grey;
+  }
+
+  .goods__title {
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  .goods__table {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .goods__quantity {
+    padding-right: 50px;
+  }
+
+  .goods__button {
+    flex-basis: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .goods {
+    padding: 20px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-left: none;
+    border-right: none;
+  }
+
+  .goods__link,
+  .goods__button {
+    flex-basis: auto;
+  }
+
+  .goods__link {
+    margin: 0;
+    flex-basis: 325px;
+  }
+
+  .goods__title {
+    margin-bottom: 0;
+  }
+
+  .goods__button {
+    width: 245px;
+  }
+
+  .goods__table {
+    width: 285px;
+    flex-basis: 285px;
+  }
+
+  .goods__price {
+    text-align: right;
+  }
 }

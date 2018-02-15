@@ -1,7 +1,17 @@
 .programms {
-  @include block-border;
+  margin-bottom: 20px;
 }
 
 .programms__wrapper {
   @include container;
+}
+
+@media (min-width: $desktop-width) {
+  .programms {
+    margin-bottom: 80px;
+  }
+
+  .programms__wrapper {
+    display: flex;
+  }
 }

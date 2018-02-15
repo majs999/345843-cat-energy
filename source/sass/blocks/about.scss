@@ -1,5 +1,5 @@
 .about {
-  @include block-border;
+  margin-bottom: 50px;
 }
 
 .about__wrapper {
@@ -8,6 +8,7 @@
 
 .about__title {
   @include title;
+  margin-bottom: 45px;
 }
 
 .about__list {
@@ -16,4 +17,46 @@
 
 .about__item {
   @include text-arial;
+  margin-bottom: 35px;
+  padding-left: 80px;
+}
+
+@media (min-width: $tablet-width) {
+  .about__title {
+    margin-bottom: 75px;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about__item {
+    flex-basis: 50%;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-top: 115px;
+    padding-right: 100px;
+    padding-bottom: 140px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    margin-bottom: 220px;
+  }
+
+  .about__list {
+    flex-wrap: nowrap;
+  }
+
+  .about__item {
+    padding-right: 0;
+    margin-right: 80px;
+    padding-bottom: 55px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
 }

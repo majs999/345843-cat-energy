@@ -1,19 +1,72 @@
-.contacts {
-  @include block-border;
+.contacts--inner {
+  background-color: $main-color-grey;
 }
 
 .contacts__wrapper {
   @include container;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .contacts__slogan {
   text-transform: uppercase;
+  flex-basis: 50%;
 }
 
 .contacts__text {
   @include text-arial;
+  line-height: 20px;
+  flex-basis: 50%;
 }
 
 iframe {
   border: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__wrapper {
+    padding: 70px;
+  }
+
+  .contacts__slogan {
+    flex-basis: 200px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .contacts__text {
+    flex-basis: 170px;
+    text-align: right;
+    line-height: 20px;
+  }
+
+  .contacts__city {
+    display: block;
+    margin-top: 20px;
+  }
+
+  // .contacts--inner {
+  //   background-color: $main-color-grey;
+  // }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__wrapper {
+    width: 570px;
+    position: absolute;
+    top: 95px;
+    left: 50%;
+    transform: translateX(-610px);
+    background-color: $main-color-white;
+  }
+
+  .contacts__text {
+    text-align: left;
+  }
 }

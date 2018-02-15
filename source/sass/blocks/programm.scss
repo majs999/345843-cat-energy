@@ -1,17 +1,77 @@
 .programm {
+  margin-bottom: 20px;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
   background-color: $main-color-grey;
 }
 
 .programm__title {
   @include small-title;
+  margin-bottom: 40px;
+  padding-left: 70px;
   text-transform: uppercase;
 }
 
 .programm__text {
   @include text-arial;
+  margin-bottom: 50px;
 }
 
 .programm__link {
   @include unlink;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .programm {
+    padding-top: 80px;
+    padding-left: 55px;
+    padding-right: 280px;
+    padding-bottom: 65px;
+    margin-bottom: 35px;
+  }
+
+  .programm__title {
+    margin-bottom: 35px;
+    padding-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .programm__text {
+    margin-bottom: 65px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .programm__link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .programm {
+    flex-basis: 50%;
+    margin-bottom: 0;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+  }
+
+  .programm:first-of-type {
+    margin-right: 80px;
+  }
+
+  .programm__title {
+    padding-left: 165px;
+    margin-bottom: 80px;
+  }
+
+  .programm__text {
+    margin-bottom: 40px;
+  }
 }

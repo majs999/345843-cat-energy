@@ -1,5 +1,8 @@
 fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
+  margin-bottom: 25px;
 }
 
 label,
@@ -10,11 +13,14 @@ textarea {
 
 legend {
   @include small-title;
+  margin-bottom: 35px;
 }
 
 textarea {
   resize: vertical;
   width: 100%;
+  padding: 10px;
+  border: 1px solid $main-color-grey;
 }
 
 .cat-info__list,
@@ -26,4 +32,187 @@ textarea {
 
 .main-form__legend {
   @include text-arial;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cat-info__item,
+.cat-owner__item {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  label {
+    margin-right: 10px;
+  }
+
+  input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid $main-color-grey;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.cat-goal {
+  padding: 30px 0;
+  border-top: 1px solid $main-color-grey;
+  border-bottom: 1px solid $main-color-grey;
+}
+
+.cat-goal__item,
+.extras__items {
+  margin-bottom: 30px;
+  padding-left: 45px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.extras {
+  margin-bottom: 35px;
+}
+
+.main-form__button {
+  margin-bottom: 25px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-form {
+    margin: 0 40px;
+    margin-bottom: 75px;
+    position: relative;
+  }
+
+  label,
+  input,
+  textarea {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  label {
+    margin-right: 20px;
+  }
+
+  input,
+  textarea {
+    padding: 10px 15px;
+    border: 1px solid $main-color-grey;
+  }
+
+  fieldset {
+    margin-bottom: 70px;
+  }
+
+  legend {
+    margin-bottom: 70px;
+  }
+
+  .cat-info__item,
+  .cat-goal__item,
+  .cat-owner__item,
+  .extras__item {
+    margin-bottom: 20px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .cat-goal {
+    padding: 30px;
+    border: 1px solid $main-color-grey;
+  }
+
+  .extras__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .extras__items {
+    flex-basis: 50%;
+    margin-bottom: 55px;
+
+    &:nth-of-type(n+2) {
+      margin-bottom: 0;
+    }
+  }
+
+  .main-form__button {
+    padding: 15px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .main-form__legend {
+    position: absolute;
+    bottom: 10px;
+    left: 345px;
+  }
+
+  .extras {
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-form {
+    margin: 0;
+    margin-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .cat-info,
+  .cat-goal {
+    flex-basis: 570px;
+  }
+
+  .cat-owner {
+    flex-basis: 100%;
+  }
+
+  .cat-owner__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .cat-owner__item {
+    flex-basis: 570px;
+    margin-bottom: 0;
+  }
+
+  .main-form__comment {
+    flex-basis: 100%;
+  }
+
+  .extras {
+    flex-basis: 100%;
+  }
+
+  .extras__list {
+    flex-wrap: nowrap;
+  }
+
+  .extras__items {
+    flex-basis: 25%;
+    margin-bottom: 0;
+  }
+
+  .main-form__button {
+    flex-basis: 570px;
+    margin-bottom: 0;
+  }
+
+  .main-form__legend {
+    left: 650px;
+  }
 }

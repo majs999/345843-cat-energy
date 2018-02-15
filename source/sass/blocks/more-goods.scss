@@ -1,20 +1,32 @@
 .more-goods {
-  @include block-border;
+  border-top: 1px solid $main-color-grey;
+  border-bottom: 1px solid $main-color-grey;
 }
 
 .more-goods__wrapper {
   @include container;
+  padding-top: 80px;
+  padding-bottom: 25px;
+  text-align: center;
 }
 
 .more-goods__show {
+  margin-bottom: 15px;
   text-transform: uppercase;
 }
 
 .more-goods__text {
   @include text-arial;
+  margin-bottom: 25px;
 }
 
 .more-goods__button {
   color: $main-color-black;
   background-color: $main-color-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    display: none;
+  }
 }
