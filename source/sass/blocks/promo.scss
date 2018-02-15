@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   text-align: center;
+  background: url("../img/index-can-mobile@1x.png") no-repeat center 85%;
 }
 
 .promo__title {
@@ -35,8 +36,10 @@
   }
 
   .promo__wrapper {
+    min-height: 810px;
     padding-left: 120px;
     text-align: left;
+    background-position: center bottom;
   }
 
   .promo__title {
@@ -62,6 +65,15 @@
   .promo {
     min-height: 500px;
     margin-bottom: 80px;
+    background-color: $main-color-white;
+    background-image: url("../img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: contain;
+  }
+
+  .promo__wrapper {
+    background-position: center;
   }
 
   .promo__title,

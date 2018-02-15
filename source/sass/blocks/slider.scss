@@ -21,6 +21,8 @@
   .slider {
     padding-bottom: 75px;
     background-color: #eaeaea;
+    background-size: 100% 384px;
+    background-position: center bottom;
   }
 
   .slider__image {
@@ -28,6 +30,10 @@
     height: 517px;
     display: block;
     margin: 0 auto;
+
+    &:last-of-type {
+      display: none;
+    }
   }
 
   .slider__toggle {
@@ -51,9 +57,9 @@
     background-color: transparent;
   }
 
-  .slider__image:last-of-type {
-    display: none;
-  }
+  // .slider__image:last-of-type {
+  //   display: none;
+  // }
 
   .slider__toggles {
     margin-top: 40px;
