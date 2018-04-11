@@ -18,6 +18,12 @@
   line-height: 16px;
 }
 
+.copyright__logo {
+  &:hover {
+
+  }
+}
+
 @media (min-width: $tablet-width) {
   .copyright {
     flex-basis: 33%;

@@ -3,7 +3,14 @@
   text-align: center;
   font-family: "Arial", sans-serif;
   color: $main-color-white;
-  background: $main-color-green url("../img/gift-photo-mobile@1x.jpg");
+  background-color: $main-color-green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-size: 100%;
+
+  @media (max-width: $mobile-width-only) and (min-resolution: $retina-dpi),
+    (max-width: $mobile-width-only) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
 }
 
 .gift__slogan {
@@ -21,9 +28,14 @@
     padding-top: 75px;
     padding-left: 420px;
     padding-right: 110px;
-    padding-bottom: 70px;
-    background-size: cover;
-    background-position: center -350px;
+    padding-bottom: 65px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    // background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 
   .gift__slogan {
@@ -39,6 +51,11 @@
     padding: 0;
     width: 245px;
     height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+    }
   }
 
   .gift__slogan {

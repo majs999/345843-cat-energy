@@ -1,7 +1,10 @@
+// Служебные
 @import "normalize.scss";
 @import "variables.scss";
 @import "mixins.scss";
 @import "scaffolding.scss";
+
+// БЭМ-блоки
 @import "blocks/about.scss";
 @import "blocks/button.scss";
 @import "blocks/catalog.scss";

@@ -9,9 +9,49 @@
 
 .programm__title {
   @include small-title;
+  position: relative;
   margin-bottom: 40px;
   padding-left: 70px;
   text-transform: uppercase;
+
+  &::before {
+    position: absolute;
+    content: "";
+
+    left: 0;
+    top: -10px;
+
+    width: 50px;
+    height: 50px;
+
+    background-color: $main-color-green;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+
+    left: 0;
+    top: -10px;
+
+    width: 50px;
+    height: 53px;
+
+    background-image: url("../img/icon-cat-slim.svg");
+    background-size: 50px 53px;
+  }
+
+  &--weight-gain::after {
+    left: -10px;
+    top: 0;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
+    background-size: 67px 28px;
+  }
 }
 
 .programm__text {
@@ -22,6 +62,10 @@
 .programm__link {
   @include unlink;
   text-transform: uppercase;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {

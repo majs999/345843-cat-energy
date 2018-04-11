@@ -5,15 +5,18 @@
 
 .pick-programm__wrapper {
   @include container;
+  padding: 0;
 }
 
 .pick-programm__title {
   @include title;
+  margin: 0 20px;
   margin-bottom: 40px;
 }
 
 .pick-programm__text {
   width: 250px;
+  margin: 0 20px;
   margin-bottom: 40px;
   font-size: 14px;
   line-height: 18px;
@@ -27,6 +30,7 @@
   }
 
   .pick-programm__title {
+    margin: 0;
     margin-bottom: 65px;
   }
 

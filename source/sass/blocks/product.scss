@@ -69,6 +69,30 @@
       color: $main-color-black;
       background-color: $main-color-grey;
     }
+
+    .product__title {
+      position: relative;
+
+      &::before,
+      &::after {
+        content: "";
+
+        position: absolute;
+        top: -50px;
+        left: 50%;
+
+        width: 60px;
+        height: 2px;
+
+        transform: translateX(-50%);
+
+        background-color: $main-color-grey;
+      }
+
+      &::after {
+        transform: translateX(-50%) rotate(90deg);
+      }
+    }
   }
 
   .product__title {

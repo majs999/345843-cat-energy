@@ -13,6 +13,28 @@
 .more-goods__show {
   margin-bottom: 15px;
   text-transform: uppercase;
+
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: -35px;
+    left: 50%;
+
+    width: 30px;
+    height: 2px;
+
+    transform: translateX(-50%);
+
+    background-color: $main-color-grey;
+  }
+
+  &::after {
+    transform: translateX(-50%) rotate(90deg);
+  }
 }
 
 .more-goods__text {
@@ -23,6 +45,14 @@
 .more-goods__button {
   color: $main-color-black;
   background-color: $main-color-grey;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
 }
 
 @media (min-width: $tablet-width) {

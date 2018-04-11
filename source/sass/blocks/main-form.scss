@@ -1,8 +1,13 @@
 fieldset {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   border: none;
   margin-bottom: 25px;
+  overflow: hidden;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 label,
@@ -14,6 +19,43 @@ textarea {
 legend {
   @include small-title;
   margin-bottom: 35px;
+  width: 100%;
+
+  position: relative;
+  z-index: 2;
+
+  & span {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: calc(100% + 25px);
+      height: 100%;
+
+      background-color: #ffffff;
+    }
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: -1;
+
+    width: 200%;
+    height: 3px;
+
+    background-color: $main-color-green;
+  }
 }
 
 textarea {
@@ -51,6 +93,18 @@ textarea {
     flex-grow: 1;
     padding: 10px;
     border: 1px solid $main-color-grey;
+
+    &:hover {
+      border: 1px solid $main-color-medgrey;
+    }
+
+    &:focus {
+      border: 1px solid $main-color-black;
+    }
+
+    &:invalid {
+      border: 1px solid #ff8282;
+    }
   }
 
   &:last-of-type {
@@ -64,21 +118,135 @@ textarea {
   border-bottom: 1px solid $main-color-grey;
 }
 
-.cat-goal__item,
-.extras__items {
+.cat-goal__item {
   margin-bottom: 30px;
-  padding-left: 45px;
+  padding-left: 65px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
 }
 
-.extras {
-  margin-bottom: 35px;
+.cat-goal__radio {
+  display: none;
+
+  &:checked + .cat-goal__label::after {
+    content: "";
+
+    position: absolute;
+    top: 7px;
+    left: -35px;
+
+    width: 10px;
+    height: 10px;
+
+    background-color: $main-color-green;
+    border-radius: 10px;
+  }
+}
+
+.cat-goal__label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -45px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $main-color-grey;
+    border-radius: 30px;
+  }
+
+  &:hover::before {
+    border: 1px solid $main-color-medgrey;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    &::before,
+    &::after {
+      opacity: 0.3;
+    }
+  }
+}
+
+.extras__item {
+  margin-bottom: 30px;
+  padding-left: 45px;
+
+  &:last-of-type {
+    margin-bottom: 35px;
+  }
+}
+
+.extras__checkbox {
+  display: none;
+
+  &:checked ~ .extras__label::after {
+    opacity: 1;
+    transform: rotate(-45deg);
+  }
+
+  &:checked ~ .extras__label:active::after {
+    opacity: 0.3;
+  }
+}
+
+.extras__label {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: -3px;
+    left: -45px;
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid $main-color-grey;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 4px;
+    left: -39px;
+
+    width: 20px;
+    height: 10px;
+
+    border: 2px solid $main-color-green;
+    border-top-style: none;
+    border-right-style: none;
+    opacity: 0;
+  }
+
+  &:hover::before {
+    border: 1px solid $main-color-medgrey;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
 }
 
 .main-form__button {
+  margin: 0 auto;
   margin-bottom: 25px;
 }
 
@@ -108,10 +276,19 @@ textarea {
 
   fieldset {
     margin-bottom: 70px;
+    padding: 0;
+
+    &:last-of-type {
+      margin-bottom: 65px;
+    }
   }
 
   legend {
     margin-bottom: 70px;
+
+    &::after {
+      top: 20px;
+    }
   }
 
   .cat-info__item,
@@ -130,12 +307,16 @@ textarea {
     border: 1px solid $main-color-grey;
   }
 
+  // .extras {
+  //   margin-bottom: 65px;
+  // }
+
   .extras__list {
     display: flex;
     flex-wrap: wrap;
   }
 
-  .extras__items {
+  .extras__item {
     flex-basis: 50%;
     margin-bottom: 55px;
 
@@ -145,6 +326,7 @@ textarea {
   }
 
   .main-form__button {
+    margin: 0;
     padding: 15px;
     font-size: 20px;
     line-height: 20px;
@@ -154,10 +336,6 @@ textarea {
     position: absolute;
     bottom: 10px;
     left: 345px;
-  }
-
-  .extras {
-    margin-bottom: 65px;
   }
 }
 
@@ -202,7 +380,7 @@ textarea {
     flex-wrap: nowrap;
   }
 
-  .extras__items {
+  .extras__item {
     flex-basis: 25%;
     margin-bottom: 0;
   }
