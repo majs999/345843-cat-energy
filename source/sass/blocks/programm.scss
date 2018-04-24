@@ -1,6 +1,6 @@
 .programm {
   margin-bottom: 20px;
-  padding-top: 40px;
+  padding-top: 37px;
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 20px;
@@ -10,7 +10,7 @@
 .programm__title {
   @include small-title;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 37px;
   padding-left: 70px;
   text-transform: uppercase;
 
@@ -18,8 +18,8 @@
     position: absolute;
     content: "";
 
-    left: 0;
-    top: -10px;
+    left: 1px;
+    top: -11px;
 
     width: 50px;
     height: 50px;
@@ -33,66 +33,124 @@
     content: "";
 
     left: 0;
-    top: -10px;
+    top: -15px;
 
     width: 50px;
     height: 53px;
 
     background-image: url("../img/icon-cat-slim.svg");
-    background-size: 50px 53px;
+    background-size: 54px 50px;
   }
 
   &--weight-gain::after {
     left: -10px;
-    top: 0;
+    top: -1px;
 
-    width: 67px;
+    width: 72px;
     height: 28px;
 
     background-image: url("../img/icon-cat-pro.svg");
-    background-size: 67px 28px;
+    background-size: 72px 28px;
   }
 }
 
 .programm__text {
   @include text-arial;
-  margin-bottom: 50px;
+  margin-bottom: 18px;
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid $main-color-medgrey;
 }
 
 .programm__link {
   @include unlink;
+  position: relative;
   text-transform: uppercase;
 
   &:active {
     opacity: 0.3;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+
+    top: 7px;
+    right: -36px;
+
+    width: 24px;
+    height: 11px;
+
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-size: 24px 11px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .programm {
-    padding-top: 80px;
-    padding-left: 55px;
+    padding-top: 78px;
+    padding-left: 53px;
     padding-right: 280px;
-    padding-bottom: 65px;
-    margin-bottom: 35px;
+    padding-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .programm__title {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
     padding-left: 0;
     font-size: 36px;
     line-height: 36px;
+
+    &::before {
+      left: 393px;
+      top: 15px;
+
+      width: 200px;
+      height: 200px;
+    }
+
+    &--weight-loss::after {
+      left: 423px;
+      top: 3px;
+
+      width: 140px;
+      height: 194px;
+
+      background-size: 140px 194px;
+    }
+
+    &--weight-gain::after {
+      left: 359px;
+      top: 57px;
+
+      width: 268px;
+      height: 112px;
+
+      background-size: 268px 112px;
+    }
   }
 
   .programm__text {
-    margin-bottom: 65px;
+    margin-bottom: 56px;
+    padding-bottom: 0;
     font-size: 16px;
     line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  .programm__title--weight-gain + .programm__text {
+    padding-right: 31px;
   }
 
   .programm__link {
     font-size: 20px;
     line-height: 20px;
+
+    &::after {
+      top: 10px;
+      right: -46px;
+    }
   }
 }
 

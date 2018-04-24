@@ -10,18 +10,18 @@
 .promo__wrapper {
   @include container;
   min-height: 480px;
-  padding-top: 30px;
+  padding-top: 26px;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url("../img/index-can-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: center 85%;
+  background-position: center 79%;
 }
 
 .promo__title {
   @include title;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .promo__slogan {
@@ -58,7 +58,7 @@
 
   .promo__wrapper {
     min-height: 810px;
-    padding-left: 120px;
+    padding-left: 117px;
     text-align: left;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-position: center bottom;
@@ -71,18 +71,20 @@
 
   .promo__title {
     margin-right: 200px;
-    margin-bottom: 35px;
+    margin-bottom: 42px;
   }
 
   .promo__slogan {
-    margin-bottom: 35px;
+    margin-bottom: 48px;
     font-size: 20px;
     line-height: 20px;
   }
 
   .promo__button {
+    width: 247px;
     margin-top: 0;
-    padding: 20px 30px;
+    padding: 16px 0;
+
     font-size: 20px;
     line-height: 20px;
   }

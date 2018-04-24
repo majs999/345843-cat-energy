@@ -1,9 +1,15 @@
 .programms {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
 }
 
 .programms__wrapper {
   @include container;
+}
+
+@media (min-width: $tablet-width) {
+  .programms {
+    margin-bottom: 44px;
+  }
 }
 
 @media (min-width: $desktop-width) {

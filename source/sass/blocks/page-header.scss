@@ -1,5 +1,5 @@
 .page-header {
-  margin-top: 15px;
+  margin-top: 13px;
 }
 
 .page-header__wrapper {
@@ -23,7 +23,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-header--closed {
-    padding-bottom: 15px;
+    padding-bottom: 12px;
     border-bottom: 1px solid $main-color-grey;
   }
 
@@ -49,7 +49,7 @@
 @media (min-width: $tablet-width) {
   .page-header {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 49px;
   }
 
   .page-header__wrapper {

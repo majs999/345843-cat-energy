@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 30px;
+  padding-top: 26px;
 }
 
 .catalog__wrapper {
@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     padding-top: 0;
-    margin-bottom: 70px;
+    margin-bottom: 66px;
   }
 
   .catalog__wrapper {
@@ -26,7 +26,9 @@
   }
 
   .catalog__title {
-    margin-bottom: 170px;
+    margin: 0;
+    margin-bottom: 166px;
+
     flex-basis: 100%;
   }
 }

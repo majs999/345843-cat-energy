@@ -1,3 +1,8 @@
+.slider__image {
+  margin-bottom: 30px;
+  height: 232px; //temp
+}
+
 .slider__image--hidden {
   display: none;
 }
@@ -45,7 +50,7 @@
 
 @media (min-width: $tablet-width) {
   .slider {
-    padding-bottom: 75px;
+    padding-bottom: 72px;
     background-color: #eaeaea;
     background-size: 100% 384px;
     background-position: center bottom;
@@ -62,14 +67,21 @@
     display: none;
   }
 
+  .slider__toggles {
+    margin-top: 11px;
+  }
+
   .slider__toggle {
     font-size: 20px;
     line-height: 20px;
   }
 
   .slider__scale {
+    margin: 0 14px;
+
     width: 428px;
     height: 6px;
+
     background-color: #dcdcdc;
     border-radius: 3px;
     border: none;
